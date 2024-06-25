@@ -21,6 +21,8 @@ mongoose.connect(process.env.MONGO_URI)
 // Rutas
 app.use('/', carRoutes);
 
-app.listen(PORT, () => {
+const server=app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = {app,server};

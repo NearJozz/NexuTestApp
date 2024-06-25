@@ -58,7 +58,7 @@ router.post('/brands/:id/models', async (req, res) => {
       }
       if(req.body.average_price!=undefined){
         console.log(req.body.average_price)
-        if(parseFloat(req.body.average_price)>100000){
+        if(parseFloat(req.body.average_price)>=100000){
           input.average_price=parseFloat(req.body.average_price)
         }else{
           return res.status(400).send('average_price must be greater than 100,000');
