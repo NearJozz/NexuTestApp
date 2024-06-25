@@ -9,6 +9,11 @@ To initialize the full App, run the following command:
 ```shell
 npm run main
 ```
+To run unit test, run the following command:
+```shell
+npm run test
+```
+
 For the models used, the value of the numerical ID fields was replaced by a natural UUID from mongodb
 
 Add the url to your environment to link to the API
